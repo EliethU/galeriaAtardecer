@@ -6,48 +6,48 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.tituloPrincipal}>Galeria de atardeceres</Text>
 
-      <ScrollView>
-      <View style={styles.imageContainer}>
-        <Atardecer>
-          nombre='Atardecer morado'
-          imagen={require('./IMAGENES/1.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer'
-          imagen={require('./IMAGENES/2.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer naranja'
-          imagen={require('./IMAGENES/3.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer ilustrado'
-          imagen={require('./IMAGENES/4.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer y mar'
-          imagen={require('./IMAGENES/5.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer babyblue'
-          imagen={require('./IMAGENES/6.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer horizonte'
-          imagen={require('./IMAGENES/7.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer fantastico'
-          imagen={require('./IMAGENES/8.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer lightblue'
-          imagen={require('./IMAGENES/9.jpg')}
-        </Atardecer>
-        <Atardecer>
-          nombre='Atardecer y mar'
-          imagen={require('./IMAGENES/10.jpg')}
-        </Atardecer>
+      <ScrollView contentContainerStyle={styles.scrollView}>
+        <View style={styles.imageContainer}>
+          <Atardecer
+            nombre='Atardecer morado'
+            imagen={require('./IMAGENES/1.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer'
+            imagen={require('./IMAGENES/2.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer naranja'
+            imagen={require('./IMAGENES/3.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer ilustrado'
+            imagen={require('./IMAGENES/4.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer desde el puente'
+            imagen={require('./IMAGENES/5.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer con aro de luz solar'
+            imagen={require('./IMAGENES/6.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer con girasoles'
+            imagen={require('./IMAGENES/7.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer con flores lilas'
+            imagen={require('./IMAGENES/8.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer lightblue'
+            imagen={require('./IMAGENES/9.jpg')}
+          />
+          <Atardecer
+            nombre='Atardecer y mar'
+            imagen={require('./IMAGENES/10.jpg')}
+          />
         </View>
       </ScrollView>
     </View>
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   tituloPrincipal: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: 'black',
+    color: 'blue',
     marginBottom: 10,
   },
   scrollView: {
@@ -81,9 +81,9 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
   },
-  titulo: {
+  nombre: {
     marginTop: 5,
     fontSize: 16,
-    color: 'black',
+    color: 'blue',
   },
 });
